@@ -1,4 +1,4 @@
-
+library(readr)
 #prepare matrix for calculation
 ##read text file and write to vector
 map_table <- read_lines("day3.txt")
@@ -59,8 +59,8 @@ for (l in 1:5) {
       #fill solution vector
       solution3b[l] <- sum(t)
       j<-j+1
-
 }
 
+#calculate solution
 solution3btotal <- prod(solution3b)
 solution3btotal
